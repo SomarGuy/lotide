@@ -30,7 +30,6 @@ const without = function(source, itemsToRemove) {
     }
     if (!remove) {
       modifiedArr.push(source[i]);
-      remove = false;
     }
   }
   return modifiedArr;
