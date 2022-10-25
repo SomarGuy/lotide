@@ -5,3 +5,10 @@ const assertEqual = function(actual, expected) {
     console.log(`✅✅✅Assertion Passed ${actual} === ${expected}`)
   );
 };
+
+const eqObjects = function(objOne, objTwo) {
+  if (Object.keys(objOne).length !== Object.keys(objTwo).length) {
+    return false;
+  }
+  
+}
