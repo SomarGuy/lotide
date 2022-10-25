@@ -17,3 +17,22 @@ const eqArrays = function(arrOne, arrTwo) {
   }
   return true;
 }
+
+const letterPositions = function(str) {
+  const results = {};
+
+  for (let i = 0; i < str.length; i++) {
+    const letter = str[i];
+    if (letter !== ' ') {
+      if (!Array.isArray(results[letter])) {
+        results[letter] = [i];
+      } else {
+        results[letter].push(i);
+      }
+    }
+  }
+  return results;
+}
+
+console.log(letterPositions('LHL is the best'));
+assertArraysEqual(letterPositions('hello').e, [1]);
