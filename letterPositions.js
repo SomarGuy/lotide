@@ -1,11 +1,3 @@
-const assertEqual = function(actual, expected) {
-  if (actual !== expected) (
-    console.log(`🛑🛑🛑Assertion Failed ${actual} !== ${expected}`)
-  ); else (actual === expected) (
-    console.log(`✅✅✅Assertion Passed ${actual} === ${expected}`)
-  );
-};
-
 const eqArrays = function(arrOne, arrTwo) {
   if (arrOne.length !== arrTwo.length) {
     return false;
@@ -16,7 +8,15 @@ const eqArrays = function(arrOne, arrTwo) {
     }
   }
   return true;
-}
+};
+
+const assertArraysEqual = function(arrOne, arrTwo) {
+  if (eqArrays(arrOne, arrTwo)) {
+    console.log(`🛑🛑🛑: These arrays are not equal: ${arrOne} !== ${arrTwo}`);
+  } else {
+    console.log(`✅✅✅: These arrays are equal; ${arrOne} === ${arrTwo}`);
+  }
+};
 
 const letterPositions = function(str) {
   const results = {};
