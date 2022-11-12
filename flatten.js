@@ -26,8 +26,9 @@ const flatten = function(arr) {
         newArr.push(arr[i][j]);
       }
     } else {
-      newArr.push(arr[i])
+      newArr.push(arr[i]);
     }
   }
   return newArr;
 };
+
