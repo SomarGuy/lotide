@@ -36,3 +36,4 @@ const letterPositions = function(str) {
 
 console.log(letterPositions('LHL is the best'));
 assertArraysEqual(letterPositions('hello').e, [1]);
+assertArraysEqual(letterPositions('LHL is the best').e, [1]);
