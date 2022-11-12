@@ -18,21 +18,21 @@ const { count } = require('console');
 
 
 module.exports = {
-  assertArraysEqual,
-  assertEqual,
-  assertObjectsEqual,
-  countLetters,
-  countOnly,
-  eqArrays,
-  eqObjects,
-  findKey,
-  findKeyByValue,
-  flatten,
-  head,
-  letterPositions,
-  map,
-  takeUntil,
-  without,
-  tail,
-  middle
+  assertArraysEqual: assertArraysEqual,
+  assertEqual: assertEqual,
+  assertObjectsEqual: assertObjectsEqual,
+  countLetters: countLetters,
+  countOnly: countOnly,
+  eqArrays: eqArrays,
+  eqObjects: eqObjects,
+  findKey: findKey,
+  findKeyByValue: findKeyByValue,
+  flatten: flatten,
+  head:   head,
+  letterPositions: letterPositions,
+  map: map,
+  takeUntil: takeUntil,
+  without: without,
+  tail:   tail,
+  middle: middle
 };
