@@ -1,5 +1,4 @@
-const lotide = require('./index');
-const eqArrays = lotide.eqArrays;
+const eqArrays = require("./eqArrays");
 
 const eqObjects = function(objOne, objTwo) {
   if (Object.keys(objOne).length !== Object.keys(objTwo).length) {
